@@ -9,11 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Run a one-line script
-        run: echo "Hello, world!"
+      - name: print py file
+        run: echo "print py file"; cat test.py; 
         
-      - name: Simulate an error
-        run: echo "About to fail" ; exit 1
-        
-      - name: Another greeting 
-        run: echo "hello, world2 !"
+      - name: run py file 
+        run: echo "print py file"; python3 test.py; 
